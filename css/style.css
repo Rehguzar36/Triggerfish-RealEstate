@@ -1,0 +1,939 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Center website */
+.main {
+  max-width: 100%;
+  margin: 50px 50px;
+}
+
+#myBtnContainer 
+{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#bg-image {
+  /* The image used */
+  background-image: url("../images/brisbane2.jpg");
+  min-height: 600px;
+    /* Need to position the header */
+  position: relative;
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: inherit;
+}
+
+#logo 
+{
+  background-color: inherit;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  float: left;
+}
+
+#logo:hover
+{
+  border-top: 3px solid red;
+  background-color: inherit;
+  color: darkcyan;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+#header-list
+{
+  float: right;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  margin-right: 10px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  border-top: 3px solid red;
+  background-color: inherit;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  border-top: 3px solid yellow;
+  background-color: inherit;
+  color: darkcyan;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown a:hover 
+{
+  background-color: #ddd;
+}
+
+.show 
+{
+  display: block;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+
+.dropdown .dropbtn 
+{
+  font-size: 17px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 12px 15px;
+  background-color: inherit;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content 
+{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* inherit the background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  border-top: 3px solid red;
+  background-color: inherit;
+  color: darkcyan;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a 
+{
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown-content a:hover {
+  display: block;
+  background-color: darkcyan;
+  opacity: .7;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 500px) 
+{
+  .topnav a:not(:last-child), .dropdown .dropbtn 
+  {
+    display: none;
+  }
+  .topnav a.icon 
+  {
+    float: right;
+    display: flex;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 3px;
+    margin-top: -10px;
+    margin-right: -20px;
+    position: relative;
+
+  }
+
+   #header-nav
+  {
+    margin-left: 10px;
+    float: right;
+  }
+
+  #header-nav a
+  {
+    float: left;
+    font-size: 15px;
+    color: white;
+    margin-left: 10px;
+    padding-inline-start: 5px;
+  }
+
+  .responsive, #header-nav a:hover
+  {
+    border-top: 3px solid red;
+    color: darkcyan;
+  }
+
+  #myLinks
+  {
+    float: left;
+  }
+
+  #header-nav .dropdown a:hover
+  {
+    float: right;
+    display: block;
+  }
+
+  #header-nav .dropbtn:hover
+  {
+    display: block;
+    border-top: 3px solid red;
+    color: darkcyan;
+  }
+
+  #header-nav a:first-child
+  {
+    display: none;
+  }
+
+  #myLinks a
+  {
+    background-color: yellow;
+  }
+
+  .show 
+  {
+    display: block;
+    float: right;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 500px) 
+{ 
+  #bg-image 
+  {
+    position: relative;
+    min-height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: gray;
+    background-color: inherit;
+  }
+  
+  #logo:hover
+  {
+    border-top: 3px solid red;
+    background-color: inherit;
+    color: darkcyan;
+    display: block;
+    margin: 0;
+  }
+}
+
+#banner-text  {
+  color: white;
+  background-color: inherit;
+  width: 100%;
+  margin-top: 200px;
+  margin-left: 290px;
+}
+
+/* Dropdown Button */
+.buy-btn {
+  background-color: darkcyan;
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin-top: 50px;
+  margin-left: 200px;
+  padding: 12px;
+  width: 100px;
+  position: absolute;
+  border-radius: 1px;
+}
+
+/* Dropdown button on hover & focus */
+.buy-btn:hover, .buy-btn:focus {
+  background-color: rgb(43, 104, 101);
+  color: white;
+}
+
+.search-bar {
+  position: absolute;
+  display: block;
+  margin-top: 20px;
+  margin-left: 300px;
+  width: 700px;
+  padding: 12px;
+}
+
+#search-btn
+{
+  display: block;
+  margin-top: 20px;
+  margin-left: 960px;
+  padding: 14px;
+  position: absolute;
+}
+
+@media screen and (max-width: 500px) {
+
+  #banner-text  {
+    color: white;
+    font-size: 20px;
+    background-color: inherit;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: 0px;
+  }
+
+  .buy-btn 
+  {
+    width: 90px;
+    height: 40px;
+    margin-left: 0px;
+  }
+
+  #searchField
+  {
+    position: absolute;
+    height: 40px;
+    width: 291px;
+    margin-left: 85px;
+  }
+
+  #search-btn 
+  {
+    position: absolute;
+    height: 40px;
+    width: 25px;
+    margin-left: 375px;
+    border-radius: 3px;
+  }
+
+  #search-span
+  {
+    position: absolute;
+    margin-left: -10px;
+    margin-top: 12px;
+  }
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  max-width: 1200px;
+  padding: 20px, 15px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  display: none;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  height: 400px;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: darkgreen;
+  color: white;
+}
+
+#h-price, #h-address 
+{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+
+#bed {
+  position: absolute;
+  float: left;
+  margin-left: 20px;
+  padding: 5px 5px;
+}
+
+#shower {
+  position: absolute;
+  float: left;
+  margin-left: 90px;
+  padding: 5px 5px;
+}
+
+#garage {
+  position: absolute;
+  float: left;
+  margin-left: 150px;
+  padding: 5px 5px;
+}
+
+.middle-container img{
+  max-height: 800px;
+  margin-top: 70px; 
+}
+
+.middle-container
+{
+  background-color: #3a3a3a;
+  height: 100%;
+}
+
+
+@media screen and (max-width: 500px) {
+
+  .property-report #h-title
+  {
+    margin-left: 25px;
+    font-size: 20px;
+    width: 100%;
+    height: auto;
+  }
+  .property-report #house-t
+  {
+    margin-left: 25px;
+    font-size: 15px;
+    width: 100%;
+    height: auto;
+  }
+
+  .property-report #report-btn
+  {
+    margin-left: 150px;
+    font-size: 18px;
+    width: 150px;
+    height: auto;
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+
+  .property-report #h-title
+  {
+    margin-left: 25px;
+    font-size: 20px;
+    width: 100%;
+    height: auto;
+  }
+  .property-report #house-t
+  {
+    margin-left: 25px;
+    font-size: 15px;
+    width: 100%;
+    height: auto;
+  }
+  .property-report #report-btn
+  {
+    margin-left: 150px;
+    font-size: 18px;
+    width: 150px;
+    height: auto;
+  }
+}
+
+.property-address {
+  color: #ccb456;
+  width: 100%;
+  padding-top: 20px;
+  float: center;
+}
+
+#p1-title  {
+  color: #ccb456;
+  margin-left: 600px;
+}
+
+#p2-title  {
+  color: #ccb456;
+  margin-left: 590px;
+}
+
+#p3-title  {
+  color: #ccb456;
+  margin-left: 580px;
+}
+
+#p4-title  {
+  color: #ccb456;
+  margin-left: 510px;
+}
+
+.hor-line 
+{
+  color: #ccb456;
+  margin-right: 550px;
+  width: 130px;
+}
+
+#house-title{
+  font-size: 50px;
+  word-break: break-all;
+}
+
+#h-title
+{
+  color: white;
+  position: absolute;
+  margin-top: 125px;
+  margin-left: 250px;
+}
+
+#house-t
+{
+  color: white;
+  position: absolute;
+  margin-top: 175px;
+  margin-left: 250px;
+}
+
+#report-btn 
+{
+  background-color: white;
+  color: darkcyan;
+  margin-top: 225px;
+  margin-left: 250px;
+  padding: 8px;
+  position: absolute;
+  border-radius: 3px;
+}
+
+.property-report {
+  height: 400px;
+  background-color: #3a3a3a;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.discover-btn
+{
+  background-color: white;
+  color: rgb(54, 158, 158);
+  display: block;
+  margin-left:600px;
+  margin-top:-300px;
+  width: 70px;
+  opacity: 1;
+  width: auto;
+  padding: 8px 8px;
+  position: absolute;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.middle-container .discover-btn:hover {
+  background-color: lightseagreen;
+  opacity: .7;
+  color: whitesmoke;
+}
+
+/* Responsive layout - makes a two column-layout instead of three columns */
+@media screen and (max-width: 1200px) {
+  .column {
+    width: 50%;
+  }
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+/* On screens that are 500px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .header-left {
+    display: inline-block;
+    font-size: 10px;
+    float: none;
+    width: 100%;
+  }
+  .header-right {
+    display: none;
+    float: left;
+    width: 100%;
+  }
+}
+
+.featured-content {
+  max-width: 100%;
+  margin: 50px 50px;
+  background-color: #f1f1f1;
+}
+
+#feat-title 
+{
+  position: absolute;
+  margin-left: 50px;
+}
+
+.featured-suburbs {
+  background-color: #f1f1f1;
+  height: 300px;
+}
+
+#featured 
+{
+  width: 25%;
+  padding: 10px 10px;
+  background-color: #f1f1f1;
+}
+
+#feat-house 
+{
+  background-color: #f1f1f1;
+}
+
+#feat-loc 
+{
+  margin-left: 90px;
+  color: black;
+  padding: 10px;
+}
+
+#location
+{
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+#suburb
+{
+  margin-top: 50px;
+  margin-left: 60px;
+  position: absolute;
+}
+
+.footer-section
+{
+  width: 100%;
+  height: 400px;
+  background-color: #3a3a3a;
+}
+
+#footer-logo
+{
+  padding-top: 12px;
+  float: left;
+  margin-left: 10px;
+  color: white;
+  background-color: #3a3a3a;
+}
+
+
+#footer-text
+{
+  padding-top: 12px;
+  float: left;
+  margin-left: 35px;
+  color: white;
+  background-color: #3a3a3a;
+}
+
+#address-text
+{
+  padding-top: 10px;
+}
+
+#footer-links 
+{
+  max-width: 200px;
+  padding-top: 12px;
+  position: absolute;
+  margin-left: 1050px;
+  float: left;
+  background-color: #3a3a3a;
+}
+
+#footer-links a
+{
+  padding: 10px;
+  color: white;
+  float: left;
+}
+
+#footer-newsletter
+{
+  padding-top: 20px;
+  float: left;
+  margin-left: 150px;
+  color: white;
+  background-color: #3a3a3a;
+}
+
+#subs-title 
+{
+  margin-bottom: 20px;
+}
+
+#subs-description
+{
+  margin-right: 25px;
+}
+
+#subs-form {
+  font-family: Arial;
+  width: 500px;
+  position: absolute;
+  margin-left: 300px;
+  height: 220px;
+  padding-top: 0px;
+  padding-left: 25px;
+  color: white;
+  background-color: #444242ec;
+  border-radius: 5px;
+}
+
+
+#customer-email
+{
+  width: 400px;
+  margin-top: 12px;
+  padding: 10px;
+}
+
+.submit-btn {
+  background-color: darkcyan;
+  padding: 10px;
+  margin-top: 12px;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  display: inline-block;
+  position: absolute;
+  margin-left: -1px;
+  margin-top: 12px;
+}
+
+/* Dropdown button on hover & focus */
+.submit-btn:hover, .submit-btn:focus {
+  background-color: rgb(43, 104, 101);
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+
+  .middle-container #dis-img 
+  {
+    height: 360px;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .middle-container #discover-btn
+  {
+    margin-left: 130px;
+    font-size: 18px;
+    width: 150px;
+    height: auto;
+    margin-top: -150px;
+  }
+
+  .property-address #p1-title
+  {
+    float: left;
+
+    font-size: 25px;
+    color: #ccb456;
+    margin-left: 50%;
+  }
+  .property-address #p2-title
+  {
+    float: left;
+
+    font-size: 25px;
+    color: #ccb456;
+    margin-left: 43%;
+  }
+  .property-address #p3-title
+  {
+    float: left;
+
+    font-size: 25px;
+    color: #ccb456;
+    margin-left: 48%;
+  }
+  .property-address #p4-title
+  {
+    float: left;
+
+    font-size: 25px;
+    color: #ccb456;
+    margin-left: 40%;
+  }
+
+  .property-address .hor-line 
+  {
+    color: #ccb456;
+    margin-left: 45%;
+    margin-top: 200px;
+    width: 100px;
+  }
+
+  #feat-house
+  {
+    height: 180px;
+    width: 100%;
+    padding-top: 10px;
+    margin-right: 100px;
+  }
+
+ #feat-loc
+  {
+    color: black;
+    height: 180px;
+    width: 100%;
+    margin-left: 200px;
+    margin-top: -160px; 
+
+  }
+
+  #footer-logo
+  {
+    margin-top: -5px;
+    font-size: 23px;
+  }
+
+  #footer-links
+  {
+    margin-top: -5px;
+    font-size: 20px;
+    margin-left: 300px;
+    width: 100%;
+  }
+
+ #foot-title
+  {
+    margin-top: 20px;
+    font-size: 17px;
+  }
+
+  #address-text, #phone, #fax
+  {
+    font-size: 12px;
+  }
+
+  #subs-title 
+  {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  #subs-description
+  {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  #subs-form 
+  {
+    margin-top: 20px;
+    height: 170px;
+    width: 260px;
+    margin-left: -130px;
+    background-color: #444242ec;
+  }
+
+ #customer-email 
+  {
+    margin-top: -5px;
+    width: 170px;
+    height: 30px;
+    font-size: 15px;
+    margin-bottom: -10px;
+    margin-left: 0px;
+    font-size: 12px;
+  }
+
+  .submit-btn {
+    background-color: darkcyan;
+    color: white;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    position: relative;
+    float: left;
+    margin-left: 169px;
+    margin-top: -24px;
+  }
+
+  #footer-newsletter #submit-icon
+  {
+    position: absolute;
+    margin-left: -3px;
+    margin-top: -8px;
+  }
+}
